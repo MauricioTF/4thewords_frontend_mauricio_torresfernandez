@@ -1,39 +1,20 @@
-# 4thewords_frontend_mauricio_torresfernandez
+🎨 Leyendas costarricenses Frontend – Mauricio Torres Fernández Este es el frontend del proyecto leyendas costarricenses, desarrollado con Vue 3, TypeScript, Vite y Bootstrap. Consume una API construida en FastAPI para gestionar leyendas costarricenses.
 
-This template should help get you started developing with Vue 3 in Vite.
+⚙️ Tecnologías utilizadas Vue 3 + Composition API TypeScript Vite Vue Router Axios Bootstrap 5 Modularización por componentes Autenticación con JWT (localStorage)
 
-## Recommended IDE Setup
+🚀 Cómo ejecutar el proyecto
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Clona el repositorio git clone https://github.com/MauricioTF/4thewords_frontend_mauricio_torresfernandez.git cd 4thewords_frontend_mauricio_torresfernandez
+Instale las dependencias npm install
+Ejecuta el servidor de desarrollo npm run dev Accede en el navegador: 🌐 http://localhost:3000
+⚠️Importante: asegúrese de que el backend esté corriendo en http://localhost:8080
 
-## Type Support for `.vue` Imports in TS
+📁 Estructura del proyecto src/ ├── activos/ # Estilos globales ├── componentes/base/ # Componentes reutilizables ├── vistas/ # Vistas principales ├── enrutador/ # Configuración de rutas protegidas ├── servicios/ # Funciones para consumir la API ├── tipos/ # Tipos TypeScript ├── composables/ # Lógica reutilizable
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+🧩 Funcionalidades principales ✅ Login de usuario con validación (JWT) ✅ Visualización de leyendas en una lista ✅ Filtrado por: Nombre Fecha Categoría Provincia, Cantón, Distrito ✅ Creación de leyendas con validaciones de formularios ✅ Edición y prellenado de formularios ✅ Eliminación con confirmación por modal ✅ Carga y previsualización de imágenes ✅ Tostadas flotantes para notificaciones
 
-## Customize configuration
+🔐 Autenticación Al iniciar sesión correctamente, el token se guarda en localStorage. Las rutas de leyendas están protegidas (no accesibles sin iniciar sesión).
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+📦 Scripts útiles npm run dev # Ejecuta en modo desarrollo (localhost:3000) npm run build # Compila para producción npm run preview # Previsualiza el build
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+🧑‍💻 Autor Mauricio Torres Fernández
